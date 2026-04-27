@@ -99,14 +99,14 @@ export default function EnhancedHero() {
 
               {/* Main Heading */}
               <h1 className={`mt-6 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                <span className="block text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
-                  Transform Your
+                <span className="block text-3xl md:text-4xl lg:text-7xl font-bold leading-tight text-white">
+                  Transform Your Business
                 </span>
-                <span className="block text-5xl md:text-6xl lg:text-7xl font-bold leading-tight bg-gradient-to-r from-blue-400 via-purple-400 to-red-400 bg-clip-text text-transparent animate-shimmer">
+                <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-red-400 bg-clip-text text-transparent animate-shimmer">
                   Business
                 </span>
-                <span className="block text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
-                  with Tomorrow's
+                <span className="block text-3xl md:text-4xl lg:text-7xl font-bold leading-tight text-white">
+                  with Tomorrow's Technology
                 </span>
                 <span className="block text-5xl md:text-6xl lg:text-7xl font-bold leading-tight bg-gradient-to-r from-purple-400 via-red-400 to-orange-400 bg-clip-text text-transparent animate-shimmer" style={{ animationDelay: '1s' }}>
                   Technology

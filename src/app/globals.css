@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cgit-blue: #214daa;
+    --cgit-red: #f40000;
+    --gradient: linear-gradient(to right, #214daa, #f40000);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #f6f9fc;
+    color: #0a2540;
+    font-family: "Inter", "Roboto", sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(33, 77, 170, 0.4);
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #214daa, #f40000);
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: linear-gradient(to right, #214daa 0%, #f40000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-border {
+    position: relative;
+  }
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #214daa, #f40000);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-3 rounded-full font-semibold text-white transition-all duration-300;
+    background: #635bff;
+  }
+  .btn-primary:hover {
+    background: #0a2540;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(99, 91, 255, 0.24);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-8 py-3 rounded-full font-semibold text-white border border-white/20 transition-all duration-300;
+    background: transparent;
+  }
+  .btn-outline:hover {
+    @apply border-white/40 bg-white/5;
+    transform: translateY(-2px);
+  }
+
+  .card {
+    @apply rounded-lg border transition-all duration-300;
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  .card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(33, 77, 170, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 text-sm font-semibold tracking-widest uppercase;
+    background: linear-gradient(to right, #214daa, #f40000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-heading {
+    @apply font-inter font-bold leading-tight;
+    font-size: clamp(2.625rem, 5vw, 4rem);
+    letter-spacing: 0;
+  }
+
+  .page-hero {
+    @apply relative min-h-[45vh] flex items-center overflow-hidden;
+    background: radial-gradient(
+        ellipse 80% 60% at 50% 0%,
+        rgba(33, 77, 170, 0.2),
+        transparent
+      ),
+      #000;
+  }
+}
+
+@layer utilities {
+  .text-muted {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  .bg-mesh {
+    background-image: linear-gradient(
+        120deg,
+        rgba(33, 77, 170, 0.18),
+        transparent 42%
+      ),
+      linear-gradient(300deg, rgba(244, 0, 0, 0.1), transparent 45%);
+  }
+  .grid-pattern {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "executive hiring",
     "software development",
     "ConglomerateIT",
-    "CGIT",
+    "CGIT2",
   ],
   authors: [{ name: "ConglomerateIT" }],
   creator: "ConglomerateIT",

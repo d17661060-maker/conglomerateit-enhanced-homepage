@@ -36,7 +36,8 @@ export default function ContactForm() {
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     if (e.target instanceof HTMLInputElement && e.target.type === "checkbox") {
-      setForm((prev) => ({ ...prev, privacy: e.target.checked }));
+      const target = e.target as HTMLInputElement;
+      setForm((prev) => ({ ...prev, privacy: target.checked }));
       return;
     }
 

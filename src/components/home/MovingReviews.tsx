@@ -35,7 +35,7 @@ export default function MovingReviews() {
                 
                 {/* Review Content */}
                 <p className="text-gray-700 mb-4 italic text-sm leading-relaxed">
-                  "{review.content}"
+                  {review.content}
                 </p>
                 
                 {/* Reviewer Info */}
@@ -68,7 +68,7 @@ export default function MovingReviews() {
                 
                 {/* Review Content */}
                 <p className="text-gray-700 mb-4 italic text-sm leading-relaxed">
-                  "{review.content}"
+                  {review.content}
                 </p>
                 
                 {/* Reviewer Info */}

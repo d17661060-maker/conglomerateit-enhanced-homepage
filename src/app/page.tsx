@@ -221,7 +221,7 @@ export default function Home() {
           <div className="mt-16 grid overflow-hidden rounded-[8px] bg-[#0a2540] text-white lg:grid-cols-[1fr_1fr]">
             <div className="p-8 md:p-10">
               <ShieldCheck className="h-7 w-7 text-[#3b82f6]" />
-              <h3 className="mt-5 text-[32px] font-bold leading-tight text-[#0f172a]">
+              <h3 className="mt-5 text-[32px] font-bold leading-tight text-white">
                 Trusted by enterprises worldwide
               </h3>
               <p className="mt-4 text-[16px] leading-7 text-white/70">
@@ -246,7 +246,7 @@ export default function Home() {
 
             
       <section className="bg-[#f6f9fc] py-24">
-        <div className="mx-auto max-w-4xl px-4 text-center lg:px-8">
+        <div className="mx-auto max-w-5xl px-4 text-center lg:px-8">
           <h2 className="text-[42px] font-bold leading-[1.08] text-[#0f172a] md:text-[64px]">
             Let&apos;s start your experience with ConglomerateIT.
           </h2>

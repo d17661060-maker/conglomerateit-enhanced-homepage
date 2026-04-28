@@ -35,7 +35,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-36 pb-20 overflow-hidden">
+      <section className="relative pt-36 pb-20 overflow-hidden bg-[#0a2540]">
         <div className="absolute inset-0 bg-mesh grid-pattern opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-8 text-center">
           <p className="section-label mb-4 justify-center">Contact Us</p>

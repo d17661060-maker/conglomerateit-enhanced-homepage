@@ -24,7 +24,7 @@ export default function MovingReviews() {
             {[...reviews, ...reviews].map((review, index) => (
               <div
                 key={`${review.name}-${index}`}
-                className="flex-shrink-0 w-80 mx-4 bg-white rounded-xl shadow-lg p-6 border border-gray-200"
+                className="flex-shrink-0 w-80 mx-8 bg-white rounded-xl shadow-lg p-6 border border-gray-200"
               >
                 {/* Stars */}
                 <div className="flex items-center gap-1 mb-3">
@@ -53,11 +53,11 @@ export default function MovingReviews() {
           </div>
 
           {/* Second Row - Moving Left to Right (opposite direction) */}
-          <div className="flex animate-scroll-right mt-8">
+          <div className="flex animate-scroll-right mt-12">
             {[...reviews, ...reviews].map((review, index) => (
               <div
                 key={`${review.name}-reverse-${index}`}
-                className="flex-shrink-0 w-80 mx-4 bg-white rounded-xl shadow-lg p-6 border border-gray-200"
+                className="flex-shrink-0 w-80 mx-8 bg-white rounded-xl shadow-lg p-6 border border-gray-200"
               >
                 {/* Stars */}
                 <div className="flex items-center gap-1 mb-3">
@@ -127,11 +127,11 @@ export default function MovingReviews() {
         }
 
         .animate-scroll-left {
-          animation: scroll-left 30s linear infinite;
+          animation: scroll-left 20s linear infinite;
         }
 
         .animate-scroll-right {
-          animation: scroll-right 35s linear infinite;
+          animation: scroll-right 25s linear infinite;
         }
 
         /* Pause animation on hover */

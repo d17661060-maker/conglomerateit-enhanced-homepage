@@ -48,20 +48,6 @@ export const cgitLetters = [
 
 export const servicePillars = [
   {
-    icon: ShieldCheck,
-    label: "QA / QE",
-    title: "Quality Assurance & Engineering",
-    description:
-      "Functional testing, functional automation, non-functional testing, and observability for reliable software delivery.",
-    href: "/services/qa-qe",
-    items: [
-      "Functional Testing",
-      "Functional Automation",
-      "Non-Functional Testing",
-      "Observability",
-    ],
-  },
-  {
     icon: CloudCog,
     label: "Infrastructure",
     title: "On-Premises, Cloud & Core Services",
@@ -102,6 +88,20 @@ export const servicePillars = [
       "Salesforce, ServiceNow, Workday, and Databricks implementation, customization, integration, and ongoing support.",
     href: "/services/business-transformation",
     items: ["Salesforce", "ServiceNow", "Workday", "Databricks"],
+  },
+  {
+    icon: ShieldCheck,
+    label: "QA / QE",
+    title: "Quality Assurance & Engineering",
+    description:
+      "Functional testing, functional automation, non-functional testing, and observability for reliable software delivery.",
+    href: "/services/qa-qe",
+    items: [
+      "Functional Testing",
+      "Functional Automation",
+      "Non-Functional Testing",
+      "Observability",
+    ],
   },
   {
     icon: BarChart3,
